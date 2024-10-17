@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import {Inter, Roboto_Mono} from "next/font/google";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import "./globals.css";
+import 'lenis/dist/lenis.css'
 
 
 const inter = Inter({
@@ -43,6 +45,7 @@ export default function RootLayout({
         className={`${regola.variable} ${regola_medium.variable} ${inter.variable} ${roboto.variable} font-inter`}
       >
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
