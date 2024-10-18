@@ -5,7 +5,7 @@ import { useInView } from 'framer-motion';
 import NumberTicker from '../ui/number-ticker';
 
 const para_Animation = ["AAVE", "token", "holders", "guide", "the", "Aave", "Protocol", "via", "procedures,", "voting,", "and", "smart", "contract", "execution."] 
-const title_Animation = ["Governed", "by", "you", "&", <NumberTicker className='font-regola text-[#b5e1ff] sm:w-[7.5rem] text-3xl sm:text-[40px] font-normal leading-[120%] md:leading-[135%] md:-tracking-[.8px] -tracking-[.075px]' value={193119} decimalPlaces={0} direction='up'></NumberTicker> , "others."] 
+const title_Animation = ["Governed", "by", "you", "&", <NumberTicker key={5} className='font-regola text-[#b5e1ff] sm:w-[7.5rem] text-3xl sm:text-[40px] font-normal leading-[120%] md:leading-[135%] md:-tracking-[.8px] -tracking-[.075px]' value={193119} decimalPlaces={0} direction='up'></NumberTicker> , "others."] 
 
 function Governed_Card() {
     const ref = useRef(null);
@@ -32,7 +32,7 @@ function Governed_Card() {
                         <StackText
                             key={index}
                             direction="up"
-                            className='mt-3 font-inter text-lg md:text-xl font-regular leading-[135%] -tracking-[.33px] text-[#90caff] w-full ml-1'
+                            className='mt-3 font-inter text-xl font-medium md:font-normal leading-[150%] md:leading-[135%] -tracking-[.33px] text-[#90caff] w-full ml-1'
                             framerProps={{
                                 show: { transition: { delay: 0.4 + (0.2 + index * 0.05) } },
                             }}
