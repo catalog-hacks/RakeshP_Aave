@@ -1,4 +1,4 @@
-import { delay, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import React from 'react'
 
 type Mint_BGType = {
@@ -30,7 +30,7 @@ const Minted_Background = ({ isInView }: Mint_BGType) => {
             duration: 1.5,
             repeatDelay: .5,
             ease: 'easeInOut',
-            delay: 3,
+            delay: 2.75,
             repeat: Infinity,
         }
     }}
